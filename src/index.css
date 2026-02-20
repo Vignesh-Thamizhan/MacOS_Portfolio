@@ -129,7 +129,7 @@ body {
   }
 
   #terminal {
-    @apply w-150 absolute top-32 left-[8%] bg-white shadow-2xl rounded-xl overflow-hidden;
+    @apply w-150 absolute top-20 left-[8%] bg-white shadow-2xl rounded-xl overflow-hidden;
   }
 
   #contact {
@@ -161,7 +161,7 @@ body {
   }
 
   .techstack {
-    @apply p-6 font-mono text-sm bg-white overflow-y-auto h-96;
+    @apply p-6 font-mono text-sm bg-white;
   }
 
   .techstack > p {
@@ -202,5 +202,17 @@ body {
 
   .techstack li {
     @apply text-gray-600;
+  }
+
+  .techstack .footnote {
+    @apply flex flex-col gap-2 mt-4 pt-4 border-t-2 border-gray-200 text-gray-700 text-xs;
+  }
+
+  .techstack .footnote p {
+    @apply flex items-center gap-2;
+  }
+
+  .techstack .footnote svg {
+    @apply flex-shrink-0;
   }
 }
